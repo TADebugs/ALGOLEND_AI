@@ -1,17 +1,8 @@
 import { AlgoViteClientConfig, AlgoViteKMDConfig } from '../../interfaces/network'
 
 export function getAlgodConfigFromViteEnvironment(): AlgoViteClientConfig {
-  // Debug logging
-  console.log('Environment variables:', {
-    VITE_ALGOD_SERVER: import.meta.env.VITE_ALGOD_SERVER,
-    VITE_ALGOD_NETWORK: import.meta.env.VITE_ALGOD_NETWORK,
-    VITE_ALGOD_TOKEN: import.meta.env.VITE_ALGOD_TOKEN
-  })
-  
   const server = import.meta.env.VITE_ALGOD_SERVER || 'https://testnet-api.algonode.cloud'
   const network = import.meta.env.VITE_ALGOD_NETWORK || 'testnet'
-  
-  console.log('Using config:', { server, network })
   
   return {
     server,
