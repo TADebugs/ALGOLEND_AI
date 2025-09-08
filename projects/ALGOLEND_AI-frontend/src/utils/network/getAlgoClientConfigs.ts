@@ -6,7 +6,7 @@ export function getAlgodConfigFromViteEnvironment(): AlgoViteClientConfig {
   
   return {
     server,
-    port: import.meta.env.VITE_ALGOD_PORT,
+    port: import.meta.env.VITE_ALGOD_PORT || 443,
     token: import.meta.env.VITE_ALGOD_TOKEN || '',
     network,
   }
@@ -18,7 +18,7 @@ export function getIndexerConfigFromViteEnvironment(): AlgoViteClientConfig {
   
   return {
     server,
-    port: import.meta.env.VITE_INDEXER_PORT,
+    port: import.meta.env.VITE_INDEXER_PORT || 443,
     token: import.meta.env.VITE_INDEXER_TOKEN || '',
     network,
   }
@@ -31,9 +31,9 @@ export function getKmdConfigFromViteEnvironment(): AlgoViteKMDConfig {
 
   return {
     server: import.meta.env.VITE_KMD_SERVER,
-    port: import.meta.env.VITE_KMD_PORT,
-    token: import.meta.env.VITE_KMD_TOKEN,
-    wallet: import.meta.env.VITE_KMD_WALLET,
-    password: import.meta.env.VITE_KMD_PASSWORD,
+    port: import.meta.env.VITE_KMD_PORT || 7833,
+    token: import.meta.env.VITE_KMD_TOKEN || '',
+    wallet: import.meta.env.VITE_KMD_WALLET || '',
+    password: import.meta.env.VITE_KMD_PASSWORD || '',
   }
 }
