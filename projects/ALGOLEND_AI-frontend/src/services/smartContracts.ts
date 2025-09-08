@@ -94,8 +94,8 @@ export class SmartContractService {
 
       // Create payment transaction to the pool
       const paymentTxn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
-        from: userAddress,
-        to: appAddress,
+        sender: userAddress,
+        receiver: appAddress,
         amount: Math.floor(amount * 1000000), // Convert ALGO to microALGOs
         suggestedParams,
         note: new Uint8Array(Buffer.from('Deposit to lending pool'))
@@ -103,7 +103,7 @@ export class SmartContractService {
 
       // Create application call transaction
       const appCallTxn = algosdk.makeApplicationCallTxnFromObject({
-        from: userAddress,
+        sender: userAddress,
         appIndex: poolAppId,
         onComplete: algosdk.OnApplicationComplete.NoOpOC,
         appArgs: [new TextEncoder().encode('deposit')],
@@ -143,8 +143,8 @@ export class SmartContractService {
 
       // Create collateral payment transaction
       const collateralTxn = algosdk.makePaymentTxnWithSuggestedParamsFromObject({
-        from: userAddress,
-        to: appAddress,
+        sender: userAddress,
+        receiver: appAddress,
         amount: Math.floor(collateralAmount * 1000000),
         suggestedParams,
         note: new Uint8Array(Buffer.from('Collateral for borrow'))
@@ -152,7 +152,7 @@ export class SmartContractService {
 
       // Create borrow application call
       const borrowTxn = algosdk.makeApplicationCallTxnFromObject({
-        from: userAddress,
+        sender: userAddress,
         appIndex: poolAppId,
         onComplete: algosdk.OnApplicationComplete.NoOpOC,
         appArgs: [
