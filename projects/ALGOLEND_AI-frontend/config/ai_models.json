@@ -1,0 +1,91 @@
+{
+  "market_oracle": {
+    "name": "Market Oracle AI",
+    "version": "1.0.0",
+    "description": "Real-time market analysis and investment recommendations",
+    "model_type": "ensemble",
+    "features": [
+      "price_prediction",
+      "volatility_analysis",
+      "market_sentiment",
+      "yield_optimization",
+      "risk_assessment"
+    ],
+    "update_frequency": "1m",
+    "confidence_threshold": 0.75,
+    "max_prediction_horizon": 30,
+    "parameters": {
+      "lookback_period": 7,
+      "volatility_window": 24,
+      "sentiment_weight": 0.3,
+      "technical_weight": 0.4,
+      "fundamental_weight": 0.3
+    }
+  },
+  "risk_analyzer": {
+    "name": "Risk Analyzer AI",
+    "version": "1.0.0",
+    "description": "Advanced risk assessment and fraud detection",
+    "model_type": "gradient_boosting",
+    "features": [
+      "account_analysis",
+      "transaction_patterns",
+      "credit_scoring",
+      "fraud_detection",
+      "reputation_scoring"
+    ],
+    "update_frequency": "5m",
+    "confidence_threshold": 0.8,
+    "max_analysis_depth": 1000,
+    "parameters": {
+      "min_transactions": 5,
+      "max_age_days": 3650,
+      "balance_weight": 0.25,
+      "age_weight": 0.20,
+      "frequency_weight": 0.15,
+      "consistency_weight": 0.15,
+      "amount_weight": 0.10,
+      "network_weight": 0.10,
+      "reputation_weight": 0.05
+    }
+  },
+  "yield_optimizer": {
+    "name": "Yield Optimizer AI",
+    "version": "1.0.0",
+    "description": "Portfolio optimization and yield maximization",
+    "model_type": "modern_portfolio_theory",
+    "features": [
+      "portfolio_optimization",
+      "risk_balancing",
+      "yield_forecasting",
+      "rebalancing_recommendations",
+      "diversification_analysis"
+    ],
+    "update_frequency": "10m",
+    "confidence_threshold": 0.85,
+    "max_portfolio_size": 20,
+    "parameters": {
+      "risk_tolerance_levels": {
+        "conservative": {"max_risk": 0.1, "target_return": 0.08},
+        "moderate": {"max_risk": 0.2, "target_return": 0.12},
+        "aggressive": {"max_risk": 0.4, "target_return": 0.18}
+      },
+      "rebalancing_threshold": 0.05,
+      "diversification_target": 0.7,
+      "max_concentration": 0.4
+    }
+  },
+  "global_settings": {
+    "api_timeout": 30,
+    "max_retries": 3,
+    "cache_duration": 300,
+    "log_level": "INFO",
+    "enable_monitoring": true,
+    "alert_thresholds": {
+      "low_confidence": 0.6,
+      "high_risk": 0.8,
+      "anomaly_detection": 0.9
+    }
+  }
+}
+

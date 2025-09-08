@@ -1,0 +1,118 @@
+{
+  "hash": "e7a702fe",
+  "configHash": "607787a8",
+  "lockfileHash": "f5205047",
+  "browserHash": "3a090612",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "f420243b",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "c367dbb5",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "44da08b8",
+      "needsInterop": true
+    },
+    "@txnlab/use-wallet-react": {
+      "src": "../../node_modules/@txnlab/use-wallet-react/dist/index.js",
+      "file": "@txnlab_use-wallet-react.js",
+      "fileHash": "d80f0e13",
+      "needsInterop": false
+    },
+    "notistack": {
+      "src": "../../node_modules/notistack/notistack.esm.js",
+      "file": "notistack.js",
+      "fileHash": "fbe78a32",
+      "needsInterop": false
+    },
+    "@splinetool/react-spline": {
+      "src": "../../node_modules/@splinetool/react-spline/dist/react-spline.js",
+      "file": "@splinetool_react-spline.js",
+      "fileHash": "3c528870",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "process-IZRC7KDH": {
+      "file": "process-IZRC7KDH.js"
+    },
+    "boolean-743TCG6H": {
+      "file": "boolean-743TCG6H.js"
+    },
+    "howler-HFV3EF3T": {
+      "file": "howler-HFV3EF3T.js"
+    },
+    "opentype-EFVN6FAG": {
+      "file": "opentype-EFVN6FAG.js"
+    },
+    "ui-ENPEH3DU": {
+      "file": "ui-ENPEH3DU.js"
+    },
+    "gaussian-splat-compression-DEW3VTOF": {
+      "file": "gaussian-splat-compression-DEW3VTOF.js"
+    },
+    "App-58ab7d48-4TRCTCN2": {
+      "file": "App-58ab7d48-4TRCTCN2.js"
+    },
+    "dist-3DLSHX5A": {
+      "file": "dist-3DLSHX5A.js"
+    },
+    "chunk-WHH3PQZZ": {
+      "file": "chunk-WHH3PQZZ.js"
+    },
+    "use-wallet-HX4F2EWC": {
+      "file": "use-wallet-HX4F2EWC.js"
+    },
+    "use-wallet-GDYVANK7": {
+      "file": "use-wallet-GDYVANK7.js"
+    },
+    "App-428f5096-MMVFY3H6": {
+      "file": "App-428f5096-MMVFY3H6.js"
+    },
+    "dist-ZNVJT6EE": {
+      "file": "dist-ZNVJT6EE.js"
+    },
+    "chunk-O3SOHMYN": {
+      "file": "chunk-O3SOHMYN.js"
+    },
+    "chunk-5YN6R62V": {
+      "file": "chunk-5YN6R62V.js"
+    },
+    "navmesh-YMVNYJPL": {
+      "file": "navmesh-YMVNYJPL.js"
+    },
+    "physics-7D543CYI": {
+      "file": "physics-7D543CYI.js"
+    },
+    "chunk-UKICTQGP": {
+      "file": "chunk-UKICTQGP.js"
+    },
+    "chunk-RCMBQRSH": {
+      "file": "chunk-RCMBQRSH.js"
+    },
+    "chunk-7W4IUYMA": {
+      "file": "chunk-7W4IUYMA.js"
+    },
+    "chunk-HZQOY4LB": {
+      "file": "chunk-HZQOY4LB.js"
+    },
+    "chunk-MVEJMUOB": {
+      "file": "chunk-MVEJMUOB.js"
+    },
+    "use-wallet-KOIK77CZ": {
+      "file": "use-wallet-KOIK77CZ.js"
+    },
+    "use-wallet-X4TK22TH": {
+      "file": "use-wallet-X4TK22TH.js"
+    }
+  }
+}

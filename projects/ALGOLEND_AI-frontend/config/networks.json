@@ -1,0 +1,36 @@
+{
+  "testnet": {
+    "name": "Algorand TestNet",
+    "algod_url": "https://testnet-api.algonode.cloud",
+    "indexer_url": "https://testnet-idx.algonode.cloud",
+    "explorer_url": "https://testnet.algoexplorer.io",
+    "dispenser_url": "https://testnet.algoexplorer.io/dispenser",
+    "chain_id": "testnet-v1.0",
+    "genesis_hash": "SGO1GKSzyE7IEPItTxCByw9x8FmnrCDexi9/cOUJOiI=",
+    "fee": 1000,
+    "min_balance": 100000
+  },
+  "mainnet": {
+    "name": "Algorand MainNet",
+    "algod_url": "https://mainnet-api.algonode.cloud",
+    "indexer_url": "https://mainnet-idx.algonode.cloud",
+    "explorer_url": "https://algoexplorer.io",
+    "dispenser_url": null,
+    "chain_id": "mainnet-v1.0",
+    "genesis_hash": "wGHE2Pwdvd7S12BL5FaOP20EGYesN73ktiC1qzkkit8=",
+    "fee": 1000,
+    "min_balance": 100000
+  },
+  "localnet": {
+    "name": "Algorand LocalNet",
+    "algod_url": "http://localhost:4001",
+    "indexer_url": "http://localhost:8980",
+    "explorer_url": "http://localhost:3000",
+    "dispenser_url": null,
+    "chain_id": "localnet-v1.0",
+    "genesis_hash": "localnet-genesis-hash",
+    "fee": 1000,
+    "min_balance": 100000
+  }
+}
+

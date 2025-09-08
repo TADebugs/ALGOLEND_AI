@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: algolend-ai-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ALGOD_NETWORK
+        value: testnet
+      - key: ALGOD_SERVER
+        value: https://testnet-api.algonode.cloud
+      - key: ALGOD_TOKEN
+        value: ""
+      - key: INDEXER_SERVER
+        value: https://testnet-idx.algonode.cloud
+      - key: INDEXER_TOKEN
+        value: ""
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: AI_MODEL_PATH
+        value: ./config/ai_models.json
+      - key: NETWORK_CONFIG_PATH
+        value: ./config/networks.json
