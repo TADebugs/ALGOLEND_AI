@@ -5,7 +5,8 @@ import { getAlgodConfigFromViteEnvironment, getKmdConfigFromViteEnvironment } fr
 import './styles/App.css'
 
 let supportedWallets: SupportedWallet[]
-if (import.meta.env.VITE_ALGOD_NETWORK === 'localnet') {
+const network = import.meta.env.VITE_ALGOD_NETWORK || 'testnet'
+if (network === 'localnet') {
   const kmdConfig = getKmdConfigFromViteEnvironment()
   supportedWallets = [
     {
