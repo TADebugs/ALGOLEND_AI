@@ -1,28 +1,26 @@
 import { AlgoViteClientConfig, AlgoViteKMDConfig } from '../../interfaces/network'
 
 export function getAlgodConfigFromViteEnvironment(): AlgoViteClientConfig {
-  if (!import.meta.env.VITE_ALGOD_SERVER) {
-    throw new Error('Attempt to get default algod configuration without specifying VITE_ALGOD_SERVER in the environment variables')
-  }
-
+  const server = import.meta.env.VITE_ALGOD_SERVER || 'https://testnet-api.algonode.cloud'
+  const network = import.meta.env.VITE_ALGOD_NETWORK || 'testnet'
+  
   return {
-    server: import.meta.env.VITE_ALGOD_SERVER,
+    server,
     port: import.meta.env.VITE_ALGOD_PORT,
-    token: import.meta.env.VITE_ALGOD_TOKEN,
-    network: import.meta.env.VITE_ALGOD_NETWORK,
+    token: import.meta.env.VITE_ALGOD_TOKEN || '',
+    network,
   }
 }
 
 export function getIndexerConfigFromViteEnvironment(): AlgoViteClientConfig {
-  if (!import.meta.env.VITE_INDEXER_SERVER) {
-    throw new Error('Attempt to get default algod configuration without specifying VITE_INDEXER_SERVER in the environment variables')
-  }
-
+  const server = import.meta.env.VITE_INDEXER_SERVER || 'https://testnet-idx.algonode.cloud'
+  const network = import.meta.env.VITE_ALGOD_NETWORK || 'testnet'
+  
   return {
-    server: import.meta.env.VITE_INDEXER_SERVER,
+    server,
     port: import.meta.env.VITE_INDEXER_PORT,
-    token: import.meta.env.VITE_INDEXER_TOKEN,
-    network: import.meta.env.VITE_ALGOD_NETWORK,
+    token: import.meta.env.VITE_INDEXER_TOKEN || '',
+    network,
   }
 }
 
