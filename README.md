@@ -111,7 +111,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-There is no license file yet, so no license is granted by this repository.
+MIT, see [LICENSE](LICENSE).
 
 ## Author
 

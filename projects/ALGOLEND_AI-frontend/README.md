@@ -55,3 +55,7 @@ curl -X POST http://localhost:8000/api/analyze-account \
 ## Deployment
 
 The repo has Vercel config for the frontend (`vercel.json`; `npm run build:vercel`) and Docker, Railway and Render configs for the backend (`backend/`). See [DEPLOYMENT.md](../../DEPLOYMENT.md).
+
+## License
+
+MIT, see [LICENSE](../../LICENSE).
