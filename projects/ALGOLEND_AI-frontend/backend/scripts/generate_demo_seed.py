@@ -1,19 +1,23 @@
 """
-Generate the frontend's seeded Risk Analyzer output by running the real
-RiskAnalyzer on synthetic account profiles. No network, no randomness.
+Generate the frontend's seeded agent output by running the real RiskAnalyzer
+and YieldOptimizer on synthetic inputs, plus one MarketOracle snapshot
+(fixed random seed; the oracle reads a mock market feed). No network.
 
     cd projects/ALGOLEND_AI-frontend/backend
-    python3 scripts/generate_demo_seed.py   # writes ../src/data/riskSeed.json
+    python3 scripts/generate_demo_seed.py   # writes ../src/data/riskSeed.json + yieldSeed.json + oracleSeed.json
 """
 
 import asyncio
 import json
+import random
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from ai.risk_analyzer import RiskAnalyzer  # noqa: E402
+from ai.yield_optimizer import YieldOptimizer  # noqa: E402
+from ai.market_oracle import MarketOracle  # noqa: E402
 
 DAY = 86400
 
@@ -74,6 +78,20 @@ async def main():
     print(f"wrote {dest}")
     for p in out["profiles"]:
         print(p["id"], p["result"]["credit_score"], p["result"]["risk_level"])
+
+    prefs = {"risk_tolerance": "moderate", "investment_amount": 10000, "time_horizon": 30}
+    result = await YieldOptimizer().optimize_portfolio({"positions": []}, prefs)
+    result.pop("timestamp", None)
+    ydest = dest.with_name("yieldSeed.json")
+    ydest.write_text(json.dumps({"preferences": prefs, "result": result}, indent=2) + "\n")
+    print(f"wrote {ydest}")
+
+    random.seed(42)
+    insights = await MarketOracle().get_market_insights()
+    snapshot = {k: insights[k] for k in ("market_sentiment", "lending_opportunities", "risk_factors", "recommended_actions")}
+    odest = dest.with_name("oracleSeed.json")
+    odest.write_text(json.dumps(snapshot, indent=2) + "\n")
+    print(f"wrote {odest}")
 
 
 if __name__ == "__main__":

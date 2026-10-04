@@ -45,15 +45,7 @@ export default function App() {
     },
     options: {
       resetNetwork: true,
-      debug: true, // Enable debug mode
     },
-  })
-
-  // Debug wallet manager
-  console.log('Wallet Manager Config:', {
-    supportedWallets: supportedWallets.length,
-    network: algodConfig.network,
-    algodServer: algodConfig.server
   })
 
   return (

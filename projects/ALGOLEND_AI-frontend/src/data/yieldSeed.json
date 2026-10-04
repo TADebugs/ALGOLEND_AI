@@ -1,0 +1,112 @@
+{
+  "preferences": {
+    "risk_tolerance": "moderate",
+    "investment_amount": 10000,
+    "time_horizon": 30
+  },
+  "result": {
+    "optimal_allocation": [
+      {
+        "pool_id": "stable_pool",
+        "pool_name": "Stable Yield Pool",
+        "allocation_percent": 23.3,
+        "allocation_amount": 2325.58,
+        "expected_apy": 8.5,
+        "risk_score": 15,
+        "term_days": 30
+      },
+      {
+        "pool_id": "conservative_pool",
+        "pool_name": "Conservative Pool",
+        "allocation_percent": 51.2,
+        "allocation_amount": 5116.28,
+        "expected_apy": 6.2,
+        "risk_score": 8,
+        "term_days": 15
+      },
+      {
+        "pool_id": "liquid_pool",
+        "pool_name": "Liquid Staking Pool",
+        "allocation_percent": 25.6,
+        "allocation_amount": 2558.14,
+        "expected_apy": 7.1,
+        "risk_score": 12,
+        "term_days": 7
+      }
+    ],
+    "expected_returns": {
+      "total_investment": 10000.0,
+      "weighted_apy": 6.97,
+      "expected_profit": 57.31,
+      "expected_total": 10057.31,
+      "daily_return": 0.0191,
+      "period_return_percent": 0.57
+    },
+    "rebalancing_recommendations": [
+      {
+        "action": "add",
+        "pool_id": "stable_pool",
+        "pool_name": "Stable Yield Pool",
+        "target_percent": 23.3,
+        "allocation_amount": 2325.58
+      },
+      {
+        "action": "add",
+        "pool_id": "conservative_pool",
+        "pool_name": "Conservative Pool",
+        "target_percent": 51.2,
+        "allocation_amount": 5116.28
+      },
+      {
+        "action": "add",
+        "pool_id": "liquid_pool",
+        "pool_name": "Liquid Staking Pool",
+        "target_percent": 25.6,
+        "allocation_amount": 2558.14
+      }
+    ],
+    "risk_analysis": {
+      "overall_risk": "Low",
+      "risk_score": 10.7,
+      "diversification_score": 60,
+      "concentration_risk": "Medium",
+      "number_of_pools": 3
+    },
+    "action_plan": [
+      {
+        "step": 1,
+        "action": "Invest 2325.58 ALGO in Stable Yield Pool",
+        "pool_id": "stable_pool",
+        "amount": 2325.58,
+        "expected_apy": 8.5,
+        "term_days": 30,
+        "priority": "High"
+      },
+      {
+        "step": 2,
+        "action": "Invest 2558.14 ALGO in Liquid Staking Pool",
+        "pool_id": "liquid_pool",
+        "amount": 2558.14,
+        "expected_apy": 7.1,
+        "term_days": 7,
+        "priority": "High"
+      },
+      {
+        "step": 3,
+        "action": "Invest 5116.28 ALGO in Conservative Pool",
+        "pool_id": "conservative_pool",
+        "amount": 5116.28,
+        "expected_apy": 6.2,
+        "term_days": 15,
+        "priority": "Medium"
+      },
+      {
+        "step": 4,
+        "action": "Set up automated monitoring and rebalancing",
+        "description": "Monitor portfolio performance and rebalance monthly",
+        "priority": "Medium"
+      }
+    ],
+    "optimization_confidence": 0.73
+  }
+}

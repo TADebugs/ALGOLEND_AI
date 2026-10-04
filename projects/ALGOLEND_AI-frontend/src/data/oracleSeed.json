@@ -1,0 +1,28 @@
+{
+  "market_sentiment": "Neutral",
+  "lending_opportunities": [
+    {
+      "type": "High Yield Pool",
+      "apy": 13.65,
+      "risk": "Medium",
+      "description": "Market optimism driving yields"
+    },
+    {
+      "type": "Stable Pool",
+      "apy": 8.74,
+      "risk": "Low",
+      "description": "Consistent returns with managed risk exposure"
+    },
+    {
+      "type": "Conservative Pool",
+      "apy": 5.4,
+      "risk": "Low",
+      "description": "Ultra-safe returns with minimal volatility"
+    }
+  ],
+  "risk_factors": [],
+  "recommended_actions": [
+    "Maintain balanced portfolio",
+    "Monitor market conditions closely"
+  ]
+}

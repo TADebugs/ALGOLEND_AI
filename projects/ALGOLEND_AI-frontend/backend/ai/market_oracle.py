@@ -15,7 +15,7 @@ class MarketOracle:
     def __init__(self):
         self.name = "Market Oracle"
         self.status = "active"
-        self.description = "Real-time market analysis and investment recommendations"
+        self.description = "Market sentiment and lending-opportunity calls (mock market feed in this build)"
         self.last_update = datetime.now()
         
         # Mock market data (in production, this would connect to real market APIs)

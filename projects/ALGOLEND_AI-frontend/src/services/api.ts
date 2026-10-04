@@ -1,15 +1,41 @@
-// API service for AlgoLend AI backend integration
+// API service for the optional live AlgoLend AI backend.
+// The app runs in seeded demo mode by default and only calls this when the live toggle is on.
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://algolend-ai-backend.onrender.com'
+const TIMEOUT_MS = 10000
+const LIVE_KEY = 'algolend:live-backend'
+
+export const liveBackendPref = {
+  get(): boolean {
+    try {
+      return localStorage.getItem(LIVE_KEY) === '1'
+    } catch {
+      return false
+    }
+  },
+  set(on: boolean) {
+    try {
+      if (on) localStorage.setItem(LIVE_KEY, '1')
+      else localStorage.removeItem(LIVE_KEY)
+    } catch {
+      // storage blocked: the toggle still works for this page view
+    }
+  },
+}
+
+// A free-tier backend can take a while to wake; give up instead of hanging the UI
+const fetch = (url: string, init?: RequestInit) => window.fetch(url, { ...init, signal: AbortSignal.timeout(TIMEOUT_MS) })
 
 export interface AccountAnalysisResult {
   address: string
   credit_score: number
   risk_level: string
-  analysis_timestamp: string
+  account_age_days: number
+  total_transactions: number
+  balance_algo: number
+  transaction_frequency: number
   risk_factors: string[]
   recommendations: string[]
-  transaction_count: number
-  total_volume: number
+  ai_confidence: number
 }
 
 export interface NetworkStats {
@@ -24,7 +50,7 @@ export interface NetworkStats {
 export interface AIAgentStatus {
   name: string
   status: string
-  performance: number
+  description?: string
   last_update: string
 }
 
