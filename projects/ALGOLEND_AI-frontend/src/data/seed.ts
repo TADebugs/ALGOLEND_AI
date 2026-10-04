@@ -44,7 +44,7 @@ export const AGENTS = [
   {
     name: 'Market Oracle',
     file: 'backend/ai/market_oracle.py',
-    description: 'Calls market sentiment and lending opportunities. Reads a mock market feed in this build.',
+    description: 'Calls market sentiment and lending opportunities from simulated market data (no real price feed).',
   },
   {
     name: 'Risk Analyzer',
@@ -54,7 +54,7 @@ export const AGENTS = [
   {
     name: 'Yield Optimizer',
     file: 'backend/ai/yield_optimizer.py',
-    description: 'Splits a deposit across pools by risk tolerance and term, then returns an action plan.',
+    description: 'Splits a deposit across pools by risk tolerance and term, then returns an action plan. Not served by the API yet; shown from an offline run.',
   },
 ] as const
 

@@ -269,8 +269,8 @@ const Home = () => {
                 <span className="gradient-text">on Algorand TestNet.</span>
               </h1>
               <p className="hero-subtitle">
-                A lending-pool contract plus three agents: Market Oracle, Risk Analyzer and Yield Optimizer. Everything below is
-                their real output on seeded inputs.
+                A lending-pool contract plus three agent modules: Market Oracle, Risk Analyzer and Yield Optimizer. The output below
+                comes from running their Python code offline on seeded inputs.
               </p>
               <div className="hero-actions">
                 <button className="btn-primary large" onClick={() => setActiveTab('agents')}>
@@ -359,8 +359,8 @@ const Home = () => {
                     </div>
                   </div>
                   <p className="muted">
-                    {oracleSource === 'live' ? 'Live backend output.' : 'Seeded snapshot.'} The oracle reads a mock market feed
-                    in this build.
+                    {oracleSource === 'live' ? 'Live backend output.' : 'Seeded snapshot.'} The oracle reads simulated market data,
+                    not a real price feed.
                   </p>
                 </div>
                 <div className="chart-container">
@@ -522,7 +522,8 @@ const Home = () => {
                 <p>
                   The numbers on this page come from running the backend's own Python agents on synthetic inputs
                   (<code>backend/scripts/generate_demo_seed.py</code>). The Risk Analyzer is a fixed-weight rule score, not a
-                  trained model, and there is no labeled data to measure its accuracy against, so no accuracy is claimed.
+                  trained model, and there is no labeled data to measure its accuracy against, so no accuracy is claimed. The
+                  Market Oracle reads simulated market data, and the Yield Optimizer is not wired into the API yet.
                 </p>
               </div>
               <div className="transparency-card">
