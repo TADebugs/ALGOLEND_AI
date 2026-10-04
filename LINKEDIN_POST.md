@@ -10,7 +10,7 @@
 
 **✨ Key Features:**
 • **3 AI Agents**: Market Oracle, Risk Analyzer, Yield Optimizer
-• **Real-time Analytics**: 95%+ accuracy in credit assessment
+• **Risk Analyzer**: weighted, rule-based credit scoring from on-chain activity
 • **Multi-lender Pools**: Risk distribution across multiple lenders
 • **4.5-second Finality**: Instant loan approvals vs hours on Ethereum
 • **Global Access**: Anyone worldwide can lend or borrow
@@ -56,7 +56,7 @@
 
 **✨ Features:**
 • 3 AI Agents for risk assessment & yield optimization
-• Real-time analytics with 95%+ accuracy
+• Rule-based credit scoring (accuracy not yet measured)
 • Multi-lender pools for risk distribution
 • 4.5-second finality for instant approvals
 • Global access for anyone worldwide

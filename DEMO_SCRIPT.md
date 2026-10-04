@@ -12,7 +12,7 @@
 "Our platform solves this by combining artificial intelligence with Algorand's lightning-fast blockchain technology. We use three specialized AI agents:
 
 - **Market Oracle**: Analyzes real-time market conditions and predicts optimal lending rates
-- **Risk Analyzer**: Uses machine learning to assess borrower creditworthiness with 95%+ accuracy  
+- **Risk Analyzer**: Scores borrower creditworthiness with a weighted, rule-based model over on-chain activity  
 - **Yield Optimizer**: Automatically rebalances portfolios to maximize returns
 
 The result? Instant, transparent, global access to capital with 80% lower fees than traditional finance."

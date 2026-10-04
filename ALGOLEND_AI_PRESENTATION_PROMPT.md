@@ -35,19 +35,19 @@ You are creating a technical pitch presentation for AlgoLend AI, an AI-powered D
 
 ## Three AI Agents (Core Innovation)
 
-### 1. Market Oracle (94.2% Performance)
+### 1. Market Oracle
 - **Function**: Real-time market analysis and investment recommendations
 - **Technology**: Machine learning algorithms for price prediction
 - **Output**: Risk-adjusted yield calculations, market sentiment analysis
 - **Unique**: Only platform that predicts market trends for lending decisions
 
-### 2. Risk Analyzer (98.7% Performance)
+### 2. Risk Analyzer
 - **Function**: Advanced credit scoring and fraud detection
 - **Technology**: Pattern recognition and behavioral analysis
 - **Output**: Credit scores, risk levels, fraud detection alerts
 - **Unique**: Analyzes transaction patterns, not just collateral
 
-### 3. Yield Optimizer (91.5% Performance)
+### 3. Yield Optimizer
 - **Function**: Portfolio optimization and yield maximization
 - **Technology**: Modern portfolio theory applied to DeFi
 - **Output**: Optimal allocation strategies, rebalancing recommendations
@@ -78,7 +78,7 @@ You are creating a technical pitch presentation for AlgoLend AI, an AI-powered D
 ### 1. First AI-Powered DeFi Lending Platform
 - **What**: Only platform with 3 specialized AI agents working together
 - **Why**: Eliminates human bias, provides instant decisions
-- **Impact**: 90%+ accuracy in risk assessment and yield optimization
+- **Impact**: transparent, explainable risk scores (accuracy not yet measured)
 
 ### 2. Algorand Native Architecture
 - **What**: Built specifically for Algorand blockchain
@@ -131,7 +131,7 @@ You are creating a technical pitch presentation for AlgoLend AI, an AI-powered D
 ### 2. AI Agents Status
 - **File**: Screenshot of AI Intelligence tab
 - **Show**: 3 AI agents with performance metrics
-- **Highlight**: 94.2%, 98.7%, 91.5% performance scores
+- **Highlight**: the Risk Analyzer weight breakdown behind each score
 
 ### 3. Wallet Connection
 - **File**: Screenshot of wallet connection modal
@@ -171,9 +171,9 @@ You are creating a technical pitch presentation for AlgoLend AI, an AI-powered D
 ### Slide 3: Technical Innovation
 - **Title**: "3 AI Agents Working in Harmony"
 - **Content**:
-  - Market Oracle (94.2% accuracy)
-  - Risk Analyzer (98.7% accuracy)
-  - Yield Optimizer (91.5% accuracy)
+  - Market Oracle
+  - Risk Analyzer
+  - Yield Optimizer
 - **Visual**: AI agent performance dashboard
 
 ### Slide 4: Algorand Integration
@@ -243,7 +243,7 @@ You are creating a technical pitch presentation for AlgoLend AI, an AI-powered D
 
 ### 1. AI Innovation
 - "We're the first platform to combine 3 specialized AI agents for DeFi lending"
-- "Our AI achieves 90%+ accuracy in risk assessment and yield optimization"
+- "Every risk score is explainable: seven weighted on-chain factors"
 - "Real-time updates every 10 seconds, not static like other platforms"
 
 ### 2. Blockchain Technology
@@ -277,7 +277,7 @@ You are creating a technical pitch presentation for AlgoLend AI, an AI-powered D
 ### 3. Show AI Agents (45 seconds)
 - "Navigate to AI Intelligence tab"
 - "See our 3 AI agents with live performance metrics"
-- "Market Oracle: 94.2% accuracy, Risk Analyzer: 98.7% accuracy"
+- "Three agents: Market Oracle, Risk Analyzer, Yield Optimizer"
 
 ### 4. Show Network Stats (30 seconds)
 - "Transparency panel shows live Algorand network data"
@@ -315,7 +315,7 @@ You are creating a technical pitch presentation for AlgoLend AI, an AI-powered D
 ## Success Metrics to Highlight
 
 ### Technical Metrics
-- **AI Performance**: 90%+ accuracy across all agents
+- **AI**: three agents with seeded, reproducible demo output
 - **Response Time**: <1 second for AI analysis
 - **Uptime**: 99.9% (Algorand network)
 - **Transaction Speed**: 4.5 seconds finality

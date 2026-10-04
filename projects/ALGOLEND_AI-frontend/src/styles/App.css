@@ -2657,3 +2657,16 @@ button.wallet-connected {
   outline: 2px solid var(--warning-color);
   outline-offset: 2px;
 }
+
+.portfolio-panel .stat-value {
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.network-stats {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+
+.transparency-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}

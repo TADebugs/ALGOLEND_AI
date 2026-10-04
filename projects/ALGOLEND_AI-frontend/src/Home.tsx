@@ -109,6 +109,18 @@ const Home = () => {
       .catch(() => setWalletBalance(null))
   }, [activeAddress, algodClient])
 
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      setSelectedAgent(null)
+      setSelectedPool(null)
+      setShowLoanModal(false)
+      setShowWalletModal(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
+
   const analyzeWallet = async () => {
     if (!activeAddress) return
     setAnalyzing(true)

@@ -38,9 +38,9 @@ function App() {
   ]
 
   const aiAgents = [
-    { name: "Market Oracle", status: "Active", performance: 94.2, description: "Real-time market analysis" },
-    { name: "Fraud Detective", status: "Active", performance: 98.7, description: "Risk assessment & fraud detection" },
-    { name: "Yield Optimizer", status: "Active", performance: 91.5, description: "Portfolio optimization" }
+    { name: "Market Oracle", status: "Active", description: "Market sentiment and lending calls" },
+    { name: "Risk Analyzer", status: "Active", description: "Weighted, rule-based credit score" },
+    { name: "Yield Optimizer", status: "Active", description: "Portfolio optimization" }
   ]
 
   return (
@@ -329,9 +329,6 @@ function App() {
                       <span className={`status ${agent.status.toLowerCase()}`}>{agent.status}</span>
                     </div>
                     <p className="agent-description">{agent.description}</p>
-                    <div className="agent-performance">
-                      <span>Performance: {agent.performance}%</span>
-                    </div>
                   </div>
                 ))}
               </div>
@@ -369,7 +366,7 @@ function App() {
                   <span className="status active">Active</span>
                 </div>
                 <div className="decision-item">
-                  <span>Fraud Detection</span>
+                  <span>Risk Scoring</span>
                   <span className="status active">Active</span>
                 </div>
               </div>
