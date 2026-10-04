@@ -25,13 +25,12 @@
   "risk_analyzer": {
     "name": "Risk Analyzer AI",
     "version": "1.0.0",
-    "description": "Advanced risk assessment and fraud detection",
-    "model_type": "gradient_boosting",
+    "description": "Weighted, rule-based credit score from on-chain account activity",
+    "model_type": "weighted_rules",
     "features": [
       "account_analysis",
       "transaction_patterns",
       "credit_scoring",
-      "fraud_detection",
       "reputation_scoring"
     ],
     "update_frequency": "5m",

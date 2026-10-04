@@ -13,8 +13,7 @@ class RiskAnalyzer:
     def __init__(self):
         self.name = "Risk Analyzer"
         self.status = "active"
-        self.performance = 98.7
-        self.description = "Advanced risk assessment and fraud detection"
+        self.description = "Weighted, rule-based credit score from on-chain account activity"
         self.last_update = datetime.now()
         
         # Risk scoring weights
@@ -33,7 +32,6 @@ class RiskAnalyzer:
         return {
             "name": self.name,
             "status": self.status,
-            "performance": self.performance,
             "description": self.description,
             "last_update": self.last_update.isoformat(),
             "uptime_hours": (datetime.now() - self.last_update).total_seconds() / 3600

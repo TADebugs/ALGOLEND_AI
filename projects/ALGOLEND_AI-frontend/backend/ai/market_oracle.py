@@ -15,7 +15,6 @@ class MarketOracle:
     def __init__(self):
         self.name = "Market Oracle"
         self.status = "active"
-        self.performance = 94.2
         self.description = "Real-time market analysis and investment recommendations"
         self.last_update = datetime.now()
         
@@ -34,7 +33,6 @@ class MarketOracle:
         return {
             "name": self.name,
             "status": self.status,
-            "performance": self.performance,
             "description": self.description,
             "last_update": self.last_update.isoformat(),
             "uptime_hours": (datetime.now() - self.last_update).total_seconds() / 3600

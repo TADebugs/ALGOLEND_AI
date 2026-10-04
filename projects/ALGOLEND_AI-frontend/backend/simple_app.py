@@ -53,7 +53,6 @@ class NetworkStats(BaseModel):
 class AIAgentStatus(BaseModel):
     name: str
     status: str
-    performance: float
     last_update: str
 
 class MarketInsight(BaseModel):
@@ -159,19 +158,16 @@ async def get_ai_agents_status():
         AIAgentStatus(
             name="Market Oracle",
             status="operational",
-            performance=94.2,
             last_update=datetime.now().isoformat()
         ),
         AIAgentStatus(
             name="Risk Analyzer", 
             status="operational",
-            performance=98.7,
             last_update=datetime.now().isoformat()
         ),
         AIAgentStatus(
             name="Yield Optimizer",
             status="operational", 
-            performance=91.5,
             last_update=datetime.now().isoformat()
         )
     ]

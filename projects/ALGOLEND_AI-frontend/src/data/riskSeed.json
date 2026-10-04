@@ -1,0 +1,106 @@
+{
+  "weights": {
+    "balance": 0.25,
+    "account_age": 0.2,
+    "transaction_frequency": 0.15,
+    "transaction_consistency": 0.15,
+    "transaction_amounts": 0.1,
+    "network_activity": 0.1,
+    "reputation": 0.05
+  },
+  "profiles": [
+    {
+      "id": "established",
+      "label": "Established wallet",
+      "summary": "6,200 ALGO, 14 months old, steady payments to 25 counterparties",
+      "result": {
+        "credit_score": 86,
+        "risk_level": "A+",
+        "account_age_days": 420,
+        "total_transactions": 120,
+        "balance_algo": 6200.0,
+        "transaction_frequency": 2.0,
+        "risk_factors": [],
+        "recommendations": [
+          "Excellent credit profile - eligible for premium lending rates",
+          "Consider increasing lending limits",
+          "Maintain consistent transaction patterns",
+          "Build relationships with other network participants"
+        ],
+        "ai_confidence": 1.0,
+        "detailed_scores": {
+          "balance_score": 90,
+          "age_score": 100,
+          "frequency_score": 80,
+          "consistency_score": 90,
+          "amount_score": 70,
+          "network_score": 90,
+          "reputation_score": 50.0
+        }
+      }
+    },
+    {
+      "id": "volatile",
+      "label": "Volatile trader",
+      "summary": "900 ALGO, 4 months old, irregular amounts to 8 counterparties",
+      "result": {
+        "credit_score": 67,
+        "risk_level": "B+",
+        "account_age_days": 120,
+        "total_transactions": 40,
+        "balance_algo": 900.0,
+        "transaction_frequency": 0.44,
+        "risk_factors": [],
+        "recommendations": [
+          "Good credit profile - standard lending rates apply",
+          "Consider building more transaction history",
+          "Maintain consistent transaction patterns",
+          "Build relationships with other network participants"
+        ],
+        "ai_confidence": 0.7,
+        "detailed_scores": {
+          "balance_score": 70,
+          "age_score": 80,
+          "frequency_score": 50,
+          "consistency_score": 60,
+          "amount_score": 80,
+          "network_score": 70,
+          "reputation_score": 50.0
+        }
+      }
+    },
+    {
+      "id": "new",
+      "label": "New wallet",
+      "summary": "15 ALGO, 3 days old, 4 transactions",
+      "result": {
+        "credit_score": 54,
+        "risk_level": "C+",
+        "account_age_days": 3,
+        "total_transactions": 4,
+        "balance_algo": 15.0,
+        "transaction_frequency": 2.0,
+        "risk_factors": [
+          "New account (less than 7 days old)"
+        ],
+        "recommendations": [
+          "Improve credit profile before applying for larger loans",
+          "Start with smaller loan amounts to build reputation",
+          "Increase account balance to improve creditworthiness",
+          "Maintain consistent transaction patterns",
+          "Build relationships with other network participants"
+        ],
+        "ai_confidence": 0.5,
+        "detailed_scores": {
+          "balance_score": 40,
+          "age_score": 40,
+          "frequency_score": 80,
+          "consistency_score": 80,
+          "amount_score": 40,
+          "network_score": 60,
+          "reputation_score": 50.0
+        }
+      }
+    }
+  ]
+}

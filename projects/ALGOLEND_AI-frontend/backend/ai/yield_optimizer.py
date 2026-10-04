@@ -13,7 +13,6 @@ class YieldOptimizer:
     def __init__(self):
         self.name = "Yield Optimizer"
         self.status = "active"
-        self.performance = 91.5
         self.description = "Portfolio optimization and yield maximization"
         self.last_update = datetime.now()
         
@@ -29,7 +28,6 @@ class YieldOptimizer:
         return {
             "name": self.name,
             "status": self.status,
-            "performance": self.performance,
             "description": self.description,
             "last_update": self.last_update.isoformat(),
             "uptime_hours": (datetime.now() - self.last_update).total_seconds() / 3600
